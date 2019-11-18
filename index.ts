@@ -12,5 +12,6 @@ var myArray = [
 ];
 
 var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+var randomItem1 = myArray[Math.floor(Math.random()*(myArray.length+1))];
 
-document.body.innerHTML = randomItem;
+document.body.innerHTML = "test "+randomItem+" Test "+randomItem1;
