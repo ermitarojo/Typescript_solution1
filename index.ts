@@ -3,7 +3,7 @@ import './style.css';
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
+//appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
 
 var myArray = [
   "Apples",
@@ -11,7 +11,15 @@ var myArray = [
   "Pears"
 ];
 
-var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
-var randomItem1 = myArray[Math.floor(Math.random()*(myArray.length+1))];
+//var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
-document.body.innerHTML = "test "+randomItem+" Test "+randomItem1;
+function random1()
+{
+  
+  var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+  return randomItem;
+}
+
+  appDiv.innerText = random1();  
+
+
